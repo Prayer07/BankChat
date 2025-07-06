@@ -22,7 +22,7 @@ export default function DashboardPage() {
     };
 
     fetchUser();
-  }, []);
+  });
 
   if (!user) return <div className="p-6 text-center">Loading...</div>;
 

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function LoginPage() {
   const [form, setForm] = useState({ phone: "", password: "" });
@@ -74,7 +74,7 @@ export default function LoginPage() {
           Login
         </button> <br/> <br/>
 
-        <p style={{textAlign:"center"}}>Don't have an account......<Link style={{color:"blue", textDecoration:"underline"}} href={"/signup"}>SignUp</Link></p>
+        {/* <p style={{textAlign:"center"}}>Don't have an account......<Link style={{color:"blue", textDecoration:"underline"}} href={"/signup"}>SignUp</Link></p> */}
         
         {error && <p className="text-center text-red-500 text-sm mt-4">{error}</p>}
       </form>

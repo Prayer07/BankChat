@@ -38,7 +38,7 @@ export default function HistoryPage() {
     };
 
     fetchHistory();
-  }, []);
+  });
 
   useEffect(() => {
     let filteredData = [...history];

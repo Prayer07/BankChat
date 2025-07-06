@@ -6,7 +6,7 @@ export default function WithdrawPage() {
   const [amount, setAmount] = useState("");
   const [message, setMessage] = useState("");
   const router = useRouter();
-jjjjjj
+// jjjjjj
   const handleWithdraw = async () => {
     const token = sessionStorage.getItem("token");
     const res = await fetch("/api/transactions/withdraw", {

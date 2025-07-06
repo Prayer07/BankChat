@@ -10,6 +10,10 @@ export default function RootLayout({ children }) {
   const router = useRouter();
 
   useEffect(() => {
+  fetch("/api/socket");
+}, []);
+
+  useEffect(() => {
     const name = sessionStorage.getItem("fname");
     setFname(name || "");
   }, [pathname]);

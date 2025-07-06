@@ -60,6 +60,12 @@ export default function DashboardPage() {
         >
           📜 Transaction History
         </button>
+        <button
+          onClick={() => router.push("/chat")}
+          className="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700"
+        >
+          💬 Chat
+        </button>
       </div>
     </div>
   );
